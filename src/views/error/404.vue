@@ -1,15 +1,16 @@
 <template>
-  <div class="advert">菜单</div>
+  <div>
+    <h2>404</h2>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
 export default Vue.extend({
-  name: 'MenuIndex'
+  name: '404'
 })
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 
 </style>

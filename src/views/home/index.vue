@@ -1,12 +1,12 @@
 <template>
-  <div class="advert">课程</div>
+  <div class="advert">ddd</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'CourseIndex'
+  name: 'HomeIndex'
 })
 </script>
 
