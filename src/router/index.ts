@@ -75,7 +75,10 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!store.state.user) {
       next({
-        name: 'login'
+        name: 'login',
+        query: {
+          redicrect: to.path
+        }
       })
     } else {
       next()

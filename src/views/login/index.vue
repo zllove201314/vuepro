@@ -57,10 +57,9 @@ export default Vue.extend({
         if (data.state !== 1) {
           this.$message.error(data.message)
         } else {
+          // 用户信息保存到vuex中
           this.$store.commit('setUser', data.content)
-          this.$router.push({
-            name: 'home'
-          })
+          this.$router.push(this.$route.query.redicrect as string || '/')
           // 登陆成功
           this.$message.success('登陆成功')
         }
