@@ -1,12 +1,18 @@
 <template>
-  <div class="advert">登录</div>
+  <div class="advert">
+    <RoleList />
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import RoleList from './components/list.vue'
 
 export default Vue.extend({
-  name: 'RoleIndex'
+  name: 'RoleIndex',
+  components: {
+    RoleList
+  }
 })
 </script>
 
