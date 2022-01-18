@@ -41,3 +41,28 @@ export const deleteMenu = (id: number) => {
     method: 'DELETE'
   })
 }
+
+export const getMenuNodeList = () => {
+  return request({
+    url: '/boss/menu/getMenuNodeList',
+    method: 'GET'
+  })
+}
+
+export const allocateRoleMenus = (data: any) => {
+  return request({
+    url: '/boss/menu/allocateRoleMenus',
+    method: 'POST',
+    data
+  })
+}
+
+export const getRoleMenus = (roleId: string | number) => {
+  return request({
+    url: '/boss/menu/getRoleMenus',
+    method: 'GET',
+    params: {
+      roleId
+    }
+  })
+}

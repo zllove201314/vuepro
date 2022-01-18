@@ -45,6 +45,14 @@
               size="mini"
               type="danger"
               @click="handleDelete(scope.row)">删除</el-button>
+            <el-button
+              size="mini"
+              @click="$router.push({
+                name: 'alloc-menu',
+                params: {
+                  roleId: scope.row.id
+                }
+              })">添加菜单</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -74,7 +82,7 @@ export default Vue.extend({
   data () {
     return {
       roles: [],
-      dialogVisible: true,
+      dialogVisible: false,
       loading: false,
       form: {
         current: 1,
