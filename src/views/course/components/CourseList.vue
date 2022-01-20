@@ -97,7 +97,7 @@
                   courseId: scope.row.id
                 }
               })"
-            >编辑</el-button>
+            >编辑www</el-button>
             <el-button
               @click="$router.push({
                 name: 'course-section',
