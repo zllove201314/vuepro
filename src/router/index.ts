@@ -73,6 +73,12 @@ const routes: Array<RouteConfig> = [
         name: 'alloc-menu',
         component: () => import(/* webpackChunkName: 'alloc-menu' */ '@/views/role/alloc-menu.vue'),
         props: true
+      },
+      {
+        path: '/course/create',
+        name: 'course-create',
+        component: () => import(/* webpackChunkName: 'course-create' */ '@/views/course/create.vue'),
+        props: true
       }
     ]
   },
